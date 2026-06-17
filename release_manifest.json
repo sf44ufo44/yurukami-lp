@@ -1,0 +1,129 @@
+{
+  "generatedAt": "2026-06-17T23:56:09.213Z",
+  "sourceDir": "/home/sf44u/anvy-duo/channels/mythology_remotion/launch/ningenkai_shingi",
+  "outDir": "/home/sf44u/anvy-duo/channels/mythology_remotion/launch/ningenkai_shingi/dist/public",
+  "fileCount": 30,
+  "totalBytes": 28558242,
+  "files": [
+    {
+      "path": "app.js",
+      "bytes": 13505
+    },
+    {
+      "path": "assets/characters/chibi/amaterasu.png",
+      "bytes": 227450
+    },
+    {
+      "path": "assets/characters/chibi/ameno_uzume.png",
+      "bytes": 1899648
+    },
+    {
+      "path": "assets/characters/chibi/kikurihime.png",
+      "bytes": 1794843
+    },
+    {
+      "path": "assets/characters/chibi/konohana.png",
+      "bytes": 349461
+    },
+    {
+      "path": "assets/characters/chibi/ototachibana.png",
+      "bytes": 1968165
+    },
+    {
+      "path": "assets/characters/chibi/tagitsuhime.png",
+      "bytes": 1590525
+    },
+    {
+      "path": "assets/characters/chibi/toyotamahime.png",
+      "bytes": 1537387
+    },
+    {
+      "path": "assets/characters/chibi/yamatotakeru.png",
+      "bytes": 1848187
+    },
+    {
+      "path": "assets/characters/normal/amaterasu.png",
+      "bytes": 1939918
+    },
+    {
+      "path": "assets/characters/normal/amenouzume.png",
+      "bytes": 1666640
+    },
+    {
+      "path": "assets/characters/normal/kikurihime.png",
+      "bytes": 1456370
+    },
+    {
+      "path": "assets/characters/normal/konohana.png",
+      "bytes": 1951244
+    },
+    {
+      "path": "assets/characters/normal/ototachibana.png",
+      "bytes": 1931040
+    },
+    {
+      "path": "assets/characters/normal/tagitsuhime.png",
+      "bytes": 2446301
+    },
+    {
+      "path": "assets/characters/normal/toyotamahime.png",
+      "bytes": 2046060
+    },
+    {
+      "path": "assets/characters/normal/yamatotakeru.png",
+      "bytes": 1359430
+    },
+    {
+      "path": "assets/fuda/free_fuda_amaterasu.png",
+      "bytes": 167922
+    },
+    {
+      "path": "assets/fuda/free_fuda_ameno_uzume.png",
+      "bytes": 166580
+    },
+    {
+      "path": "assets/fuda/free_fuda_kikurihime.png",
+      "bytes": 162512
+    },
+    {
+      "path": "assets/fuda/free_fuda_konohana.png",
+      "bytes": 169329
+    },
+    {
+      "path": "assets/fuda/free_fuda_ototachibana.png",
+      "bytes": 178322
+    },
+    {
+      "path": "assets/fuda/free_fuda_sheet.png",
+      "bytes": 1083957
+    },
+    {
+      "path": "assets/fuda/free_fuda_tagitsuhime.png",
+      "bytes": 186012
+    },
+    {
+      "path": "assets/fuda/free_fuda_toyotamahime.png",
+      "bytes": 178905
+    },
+    {
+      "path": "assets/fuda/free_fuda_yamatotakeru.png",
+      "bytes": 158699
+    },
+    {
+      "path": "campaign-data.js",
+      "bytes": 33918
+    },
+    {
+      "path": "index.html",
+      "bytes": 7107
+    },
+    {
+      "path": "shorts-30.md",
+      "bytes": 18890
+    },
+    {
+      "path": "styles.css",
+      "bytes": 19915
+    }
+  ]
+}

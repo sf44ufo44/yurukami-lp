@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>神々チャンネル 人間界審議 | 推し神診断</title>
+  <meta name="description" content="仕事、AI、人間関係の小さいしんどさを、推し神が審議して神札で返す診断ページ。">
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500;700&family=M+PLUS+Rounded+1c:wght@700;900&family=Zen+Maru+Gothic:wght@400;500;700;900&family=Yuji+Syuku&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#diagnosis" data-track-link="nav_brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>神々チャンネル</span>
+    </a>
+    <nav aria-label="メイン">
+      <a href="#diagnosis" data-track-link="nav_diagnosis">診断</a>
+      <a href="#free-fuda" data-track-link="nav_fuda">神札</a>
+      <a href="#products" data-track-link="nav_products">参加</a>
+      <a href="metrics.html" data-track-link="nav_metrics" data-operator-only hidden>計測</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="diagnosis-stage" id="diagnosis" aria-labelledby="diagnosis-title">
+      <div class="stage-pattern" aria-hidden="true"></div>
+      <div class="character-cloud" aria-hidden="true">
+        <img class="float-char char-amaterasu" data-character-image="amaterasu" alt="">
+        <img class="float-char char-konohana" data-character-image="konohana" alt="">
+        <img class="float-char char-tagitsuhime" data-character-image="tagitsuhime" alt="">
+      </div>
+
+      <div class="diagnosis-copy">
+        <p class="eyebrow">人間界審議 第一札</p>
+        <h1 id="diagnosis-title">あなたのしんどさに付く、推し神を決める。</h1>
+        <p class="lead">仕事、AI、返信、深夜の反省会。いま抱えている小さい重さを、神々が審議して一枚の神札にします。</p>
+        <div class="metric-strip" aria-label="ローンチ仮説">
+          <span><b>主戦場</b>YouTube Shorts</span>
+          <span><b>入口</b>推し神診断</span>
+          <span><b>目標</b>登録25%</span>
+        </div>
+      </div>
+
+      <div class="diagnosis-panel" data-state="ready">
+        <div class="panel-head">
+          <span class="panel-kicker">五問審議</span>
+          <span class="question-count" id="question-count">1 / 5</span>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <span id="progress-bar"></span>
+        </div>
+        <h2 id="question-text">読み込み中</h2>
+        <div class="choices" id="choices"></div>
+        <button class="ghost-button" id="restart-button" type="button">最初からやり直す</button>
+      </div>
+    </section>
+
+    <section class="result-band" id="result" hidden aria-live="polite">
+      <div class="result-layout">
+        <div class="result-character">
+          <img id="result-chibi" src="assets/characters/chibi/amaterasu.png" alt="アマテラス">
+        </div>
+        <div class="result-copy">
+          <p class="eyebrow">審議結果</p>
+          <h2 id="result-name">推し神</h2>
+          <p id="result-line"></p>
+          <div class="result-actions">
+            <a class="primary-button" href="#owned-fan-form" data-cta="owned_fan_result">先行神札を受け取る</a>
+            <a class="secondary-button" href="#free-fuda" data-cta="view_free_fuda">8神の札を見る</a>
+          </div>
+        </div>
+        <article class="fuda-card result-fuda" id="result-fuda">
+          <span class="fuda-seal">神託</span>
+          <h3 id="result-fuda-title">札名</h3>
+          <p id="result-fuda-text">神託文</p>
+          <small id="result-fuda-god">神々チャンネル</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="owned-band" id="owned-fan-form" aria-labelledby="owned-title">
+      <div class="owned-layout">
+        <div>
+          <p class="eyebrow">無料配布</p>
+          <h2 id="owned-title">先行案内に入ると、初回の神札セットを受け取れます。</h2>
+          <p>診断結果に合わせて、無料神札、次回の人間界審議、推し神投票の案内を送ります。</p>
+        </div>
+        <form class="lead-form" id="lead-form">
+          <label>
+            呼び名
+            <input type="text" name="name" autocomplete="name" placeholder="例: 月曜が重い人">
+          </label>
+          <label>
+            受け取り先
+            <input type="email" name="contact" autocomplete="email" placeholder="mail@example.com">
+          </label>
+          <label>
+            今の推し神
+            <select name="character" id="lead-character"></select>
+          </label>
+          <button class="primary-button" type="submit" data-cta="owned_fan_submit">先行案内に入る</button>
+          <p class="form-note" id="lead-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="fuda-band" id="free-fuda" aria-labelledby="fuda-title">
+      <div class="section-heading">
+        <p class="eyebrow">無料神札</p>
+        <h2 id="fuda-title">8神の保存用カード</h2>
+        <p>Shortsの概要欄、固定コメント、X投稿からここへ流し、保存・登録・BOOTH購入へ分岐させます。</p>
+      </div>
+      <div class="fuda-grid" id="fuda-grid"></div>
+    </section>
+
+    <section class="products-band" id="products" aria-labelledby="products-title">
+      <div class="section-heading">
+        <p class="eyebrow">商品導線</p>
+        <h2 id="products-title">無料から月例審議まで</h2>
+      </div>
+      <div class="product-ladder" id="product-ladder"></div>
+    </section>
+
+    <section class="shorts-band" id="shorts" aria-labelledby="shorts-title">
+      <div class="section-heading">
+        <p class="eyebrow">初期投稿</p>
+        <h2 id="shorts-title">最初の30本は、三つの痛みから始める。</h2>
+      </div>
+      <div class="shorts-summary" id="shorts-summary"></div>
+      <a class="secondary-button" href="shorts-30.md" data-track-link="shorts_markdown">30本台本を開く</a>
+    </section>
+  </main>
+
+  <aside class="operator-panel" aria-label="計測ログ" data-operator-only hidden>
+    <button class="operator-toggle" id="operator-toggle" type="button">計測</button>
+    <div class="operator-body" id="operator-body" hidden>
+      <b>ローカルイベント</b>
+      <span id="event-count">0件</span>
+      <button type="button" id="export-events">CSV出力</button>
+      <button type="button" id="clear-events">リセット</button>
+      <a href="metrics.html" data-track-link="operator_metrics">計測表へ</a>
+    </div>
+  </aside>
+
+  <script src="campaign-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
