@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-17T23:56:09.213Z",
+  "generatedAt": "2026-06-20T11:38:43.374Z",
   "sourceDir": "/home/sf44u/anvy-duo/channels/mythology_remotion/launch/ningenkai_shingi",
   "outDir": "/home/sf44u/anvy-duo/channels/mythology_remotion/launch/ningenkai_shingi/dist/public",
   "fileCount": 30,
-  "totalBytes": 28558242,
+  "totalBytes": 28558661,
   "files": [
     {
       "path": "app.js",
-      "bytes": 13505
+      "bytes": 13591
     },
     {
       "path": "assets/characters/chibi/amaterasu.png",
@@ -111,7 +111,7 @@
     },
     {
       "path": "campaign-data.js",
-      "bytes": 33918
+      "bytes": 33935
     },
     {
       "path": "index.html",
@@ -123,7 +123,7 @@
     },
     {
       "path": "styles.css",
-      "bytes": 19915
+      "bytes": 20231
     }
   ]
 }
