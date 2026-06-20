@@ -702,6 +702,20 @@ h1 {
   color: var(--shu-700);
 }
 
+.product-interest-button {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 14px;
+  border: 3px solid var(--sumi-900);
+  border-radius: 8px;
+  background: var(--sakura-300);
+  box-shadow: 3px 3px 0 var(--sumi-900);
+  font-family: var(--font-telop);
+  font-size: 15px;
+  color: var(--sumi-900);
+  cursor: pointer;
+}
+
 .shorts-band {
   background: var(--shiro);
 }

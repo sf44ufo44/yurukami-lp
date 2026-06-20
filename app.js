@@ -264,6 +264,7 @@
         <h3>${product.name}</h3>
         <p>${product.promise}</p>
         <strong>${product.price === 0 ? "無料" : `${product.price.toLocaleString("ja-JP")}円`}</strong>
+        <button type="button" class="product-interest-button">${product.cta}</button>
       `;
       item.addEventListener("click", () => {
         track("product_interest", {

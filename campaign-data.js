@@ -214,12 +214,12 @@ window.YURUKAMI_CAMPAIGN = {
     },
     {
       tier: "entry",
-      name: "BOOTH 神札スターターパック",
-      price: 1500,
-      role: "初回課金",
-      promise: "8神のスマホ壁紙、返信用カード、短い台詞テキストをまとめる。",
-      cta: "神札パックを見る",
-      kpi: "owned fan to BOOTH buyer 2%",
+      name: "神札スターターパック beta",
+      price: 500,
+      role: "購入意向テスト",
+      promise: "8神のスマホ壁紙、返信用カード、タギツヒメのタイパ仕分け札をまとめる。",
+      cta: "商品化希望を送る",
+      kpi: "LP product_interest 5%",
     },
     {
       tier: "core",
