@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-20T23:33:15.295Z",
+  "generatedAt": "2026-06-21T02:20:16.372Z",
   "sourceDir": "/home/sf44u/anvy-duo/channels/mythology_remotion/launch/ningenkai_shingi",
   "outDir": "/home/sf44u/anvy-duo/channels/mythology_remotion/launch/ningenkai_shingi/dist/public",
   "fileCount": 31,
-  "totalBytes": 28558826,
+  "totalBytes": 28558829,
   "files": [
     {
       "path": "app.js",
@@ -127,7 +127,7 @@
     },
     {
       "path": "collector-config.js",
-      "bytes": 119
+      "bytes": 122
     }
   ]
 }
