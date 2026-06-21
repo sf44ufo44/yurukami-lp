@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-21T17:00:39.244Z",
+  "generatedAt": "2026-06-21T17:04:15.331Z",
   "sourceDir": "/home/sf44u/anvy-duo/channels/mythology_remotion/launch/ningenkai_shingi",
   "outDir": "yurukami-lp-public",
-  "fileCount": 32,
-  "totalBytes": 28558863,
+  "fileCount": 31,
+  "totalBytes": 28558829,
   "files": [
     {
       "path": "app.js",
@@ -114,14 +114,6 @@
       "bytes": 33935
     },
     {
-      "path": "CNAME",
-      "bytes": 34
-    },
-    {
-      "path": "collector-config.js",
-      "bytes": 122
-    },
-    {
       "path": "index.html",
       "bytes": 7153
     },
@@ -132,6 +124,10 @@
     {
       "path": "styles.css",
       "bytes": 20231
+    },
+    {
+      "path": "collector-config.js",
+      "bytes": 122
     }
   ]
 }
